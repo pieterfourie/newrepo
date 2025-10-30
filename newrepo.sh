@@ -9,7 +9,7 @@ fi
 mkdir "$1" && cd "$1" || exit
 git init
 echo "# $1" > README.md
-echo -e ".vscode/\nnode_modules/\n.gitignore" > .gitignore
+echo -e ".vscode/\nnode_modules/\ndist/\nbuild/\n*.log" > .gitignore
 git add .
 git commit -m "Initial commit"
 echo "✅ Repo '$1' created."
